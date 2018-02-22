@@ -3,3 +3,20 @@ body {
   text-align: center;
   font-family: Helvetica;
 }
+
+a {
+  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #00bcd4;
+}
+
+#coming-soon {
+  font-size: 12px;
+  display: block;
+  padding-top: 90px;
+}
