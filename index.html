@@ -22,26 +22,58 @@
   </head>
   <body>
     <div class="page">
-      <div class="container">
-        <img src="sketchnoteclub-logo.png" alt="Sketchnote Club Logo showing a pen between a less-than and greater-then sign.">
-      </div>
 
-      <div class="container">
+      <div class="container header">
+        <img src="sketchnoteclub-logo.png" alt="Sketchnote Club Logo showing a pen between a less-than and greater-then sign.">
         <h1>Sketchnote Club</h1>
         <p>We'll sketchnote your conference!</p>
       </div>
 
       <div class="container">
-        <h4>Get in touch</h4>
-        <a href="mailto:sketchnoteclub@gmail.com">sketchnoteclub@gmail.com</a>
+        <p>We are a group of folks who get really excited about learning and teaching. Sketchnotes is an awesome way to absorb & digest information and share it with the community.</p>
       </div>
+
+
+      <div class="container contributors">
+        <h3>collaborative instigators</h3>
+
+        <div class="items contributor-bios">
+          <div class="item">
+            <a href="https://twitter.com/daiyitastic">
+              <img src="https://pbs.twimg.com/profile_images/965908401799684096/KEiN8dMO.jpg">
+            </a>
+            <h4>daiyi</h4>
+            <div class="location">oakland.ca.usa</div>
+            <p>likes mountains, sunshine, and alpine lakes \o/ clojure <3 js <3 everything is interesting, community is a trust fall.</p>
+          </div>
+          <div class="item">
+            <a href="https://twitter.com/malweene">
+              <img src="https://pbs.twimg.com/profile_images/875847418289565697/s_LZRu6Y.jpg">
+            </a>
+            <h4>malweene</h4>
+            <div class="location">berlin.de</div>
+            <p>likes coding & comics, vr, js&ruby</p>
+          </div>
+          <div class="item">
+            <a href="https://twitter.com/filtercake">
+              <img src="https://pbs.twimg.com/profile_images/717093313824833536/7Uhb_JsA.jpg">
+            </a>
+            <h4>fabian</h4>
+            <div class="location">hamburg.de</div>
+            <p>design, development and community</p>
+          </div>
+        </div>
+      </div>
+
 
       <div class="container">
       </div>
 
-
-
       <div class="container">
+        <div align="center">
+          <h3>Get in touch</h3>
+          <a class="emphasis" href="mailto:sketchnoteclub@gmail.com">sketchnoteclub@gmail.com</a>
+        </div>
         <ul class="social">
           <li>
             <a href="https://twitter.com/sketchnoteclub" class="icon-26 twitter" title="Twitter"><svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg><!--[if lt IE 9]><em>Twitter</em><![endif]--></a>
@@ -56,12 +88,19 @@
       </div>
 
       <div class="container subtext">
+        <p>----</p>
         <strong>Coming soon</strong>
         <p>What is Sketchnoting?</p>
-        <p>Who are we?</p>
         <p>What do we offer?</p>
         <p>What's the price?</p>
       </div>
-    </body>
-  </div>
+    </div>
+  </body>
+
+<script>
+var team = document.querySelector(".contributor-bios");
+for (var i = team.children.length; i >= 0; i--) {
+  team.appendChild(team.children[(Math.random() * i) | 0]);
+}
+</script>
 </html>
