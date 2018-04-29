@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 500px;
+}
+
 body {
   text-align: center;
   font-family: Helvetica;
@@ -25,14 +29,23 @@ a:hover {
   border-bottom: 3px solid #00bcd4;
 }
 
-#coming-soon {
-  font-size: 12px;
-  display: block;
-  padding-top: 90px;
-}
 h4 {
   margin: 20px auto 10px;
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  font-size: 70%;
+}
+
 .social {
   display: block;
   font-size: 0;
