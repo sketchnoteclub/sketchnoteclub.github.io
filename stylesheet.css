@@ -1,6 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   text-align: center;
   font-family: Helvetica;
+  font-family: "courier new", monospace;
 }
 
 a {
@@ -18,4 +29,34 @@ a:hover {
   font-size: 12px;
   display: block;
   padding-top: 90px;
+}
+h4 {
+  margin: 20px auto 10px;
+}
+.social {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 12px;
+}
+.social a {
+  display: block;
+  position: relative;
+  /* height: 32px; */
+  width: 32px;
+}
+.social a:hover {
+  margin-bottom: -3px;
+}
+.social svg {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
