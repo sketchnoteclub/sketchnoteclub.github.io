@@ -1,21 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 500px;
+}
+
 body {
-  text-align: center;
   font-family: Helvetica;
+  font-family: "courier new", monospace;
+/*   margin: 0;
+  padding: 0; */
 }
 
 a {
-  color: #00bcd4;
-  font-weight: bold;
+  color: #000;
   text-decoration: none;
 }
 
-a:hover {
+a.emphasis {
+  color: #00bcd4;
   font-weight: bold;
+}
+
+a:hover {
   border-bottom: 3px solid #00bcd4;
 }
 
-#coming-soon {
-  font-size: 12px;
+h3 {
+  margin: 20px auto 10px;
+  text-align: center;
+}
+
+h4 {
+  margin: 15px auto 7px;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+}
+
+.item {
+  flex: 1 0 33.33%;
+  padding: 20px;
+  background: white;
+  transition: 200ms background ease;
+}
+
+.item:hover {
+  background: #d7f2f9;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.container.contributors {
+  width: 700px;
+}
+
+.container.contributors .item {
+  font-size: 85%;
+}
+.container.contributors .item a:hover {
+  border: 0;
+}
+
+.location {
+  text-align: center;
+  font-style: italic;
+}
+
+.header {
+  text-align: center;
+}
+.header img {
+  width: initial;
+}
+
+.subtext {
+  font-size: 70%;
+}
+
+.social {
   display: block;
-  padding-top: 90px;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 12px;
+}
+.social a {
+  display: block;
+  position: relative;
+  /* height: 32px; */
+  width: 32px;
+}
+.social a:hover {
+  margin-bottom: -3px;
+}
+.social svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+  .container.contributors {
+    width: 100%;
+    margin: -20px;
+  }
+  .items {
+    flex-wrap: wrap; 
+  }
+  .item {
+    flex-basis: 100%;
+    display: flex;
+  }
+  img {
+    width: 100%;
+  }
+  .photo {
+    flex: 1 0 20%;
+    margin-right: 20px;
+  }
+  .profile {
+    flex: 1 0 80%;
+  }
+  .contributors h4 {
+    text-align: left;
+    margin-top: 0;
+  }
+  .location {
+    text-align: left;
+  }
+  
 }
