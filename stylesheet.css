@@ -15,7 +15,7 @@ img {
 body {
   font-family: Helvetica;
   font-family: "courier new", monospace;
-/*   margin: 0;
+  /*   margin: 0;
   padding: 0; */
 }
 
@@ -52,6 +52,7 @@ h4 {
   padding: 20px;
   background: white;
   transition: 200ms background ease;
+  word-break: break-word;
 }
 
 .item:hover {
@@ -77,7 +78,7 @@ h4 {
 }
 
 .container.contributors {
-  width: 700px;
+  width: 800px;
 }
 
 .container.contributors .item {
@@ -133,8 +134,6 @@ li {
   width: 100%;
 }
 
-
-
 @media (max-width: 700px) {
   .container {
     width: 100%;
@@ -144,7 +143,7 @@ li {
     margin: -20px;
   }
   .items {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
   .item {
     flex-basis: 100%;
@@ -167,5 +166,4 @@ li {
   .location {
     text-align: left;
   }
-  
 }
