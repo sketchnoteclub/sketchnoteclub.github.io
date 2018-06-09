@@ -99,7 +99,8 @@ h4 {
   margin-top: 0;
 }
 .location {
-  text-align: left;
+  display: inline;
+  font-weight: normal;
 }
 
 .header {
